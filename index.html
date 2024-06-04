@@ -1,0 +1,166 @@
+<!-- Comments below are commented by Taewoo Kim (TK), which obtained from the Xpert Learning Assistant. -->
+
+<!DOCTYPE html>     <!-- It is not an HTML element. It is Document Type declararion. -->
+                    <!-- It must be the very first thing in an HTML document, before the <html> tag. -->
+                    <!-- It helps web browsers to render the web page correctly by telling them which version of HTML the page is written in. -->
+
+<html lang="en-us"> <!-- It is used to specify the language of the content on the webpage. -->
+                    <!-- "en-us" indicates that the content is in English as spoken in the United States. -->
+
+<head>              <!-- It is used to define the head section of the document. -->
+                    <!-- This metadata includes information such as the document's title, links to external resources like stylesheets and scripts, -->
+                    <!-- and other information that is not directly displayed on the webpage. -->
+
+    <meta charset="UTF-8" />    <!-- It is used to specify the character encoding for the document. --> 
+                                <!-- The charset="UTF-8" attribute indicates that the document is encoded using UTF-8, -->
+                                <!-- which is a character encoding standard that can represent most of the world's written languages -->
+                                <!-- using a variable-length encoding. -->
+
+    <link rel="stylesheet" href="./assets/css/style.css">   <!-- It is used to link an external CSS stylesheet to an HTML document. -->
+                                                            <!-- rel="stylesheet": This attribute specifies the relationship between the current document --> 
+                                                            <!-- and the linked resource, indicating that the linked resource is a stylesheet. -->                                                                    <!-- href="./assets/css/style.css": This attribute specifies the path to the external CSS file -->
+                                                            <!-- href="./assets/css/style.css": This attribute specifies the path to the external CSS file -->
+                                                            <!-- that should be applied to the HTML document. -->
+                                                            <!-- In this case, the CSS file is located in the ./assets/css/ directory and is named style.css.-->
+
+    <!-- <title>website</title> -->
+    <title>Challenge 1 - Accessability</title>  <!-- It is used to define the title of a webpage. -->
+                            <!-- It helps users identify the content of the webpage and is also important for search engine optimization (SEO) purposes. -->
+</head>
+
+<body>                  <!-- It defines the main content of a webpage. Everything that is displayed on the webpage, such as text, images, links, and other elements, -->
+                        <!-- is typically placed within the opening '' tag and the closing '' tag. --> 
+                        <!-- The content within the <body> tags is what users see and interact with when they visit the webpage. -->
+                        <!-- It is where you structure the layout of the webpage and include all the visible elements that make up the user interface.-->
+
+    <header class="header"> <!-- It is used to group and style elements together in HTML. -->
+                            <!-- By giving the element a class attribute with a value of "header", you can apply specific styling or behavior -->
+                            <!-- to all elements within this that are part of the header section of the webpage.-->
+
+        <h1>Hori<strong class="seo">seo</strong>n</h1>  <!-- This allows for specific styling or behavior to be applied to the text "seo" separately. -->
+                                                    <!-- from the rest of the heading text. -->
+                                                    <!-- Using  elements with classes like "seo" can help target and style specific parts of the text within an HTML element, -->
+                                                    <!-- providing more flexibility in terms of design and presentation on a webpage.-->
+                                                    <!-- <span> element is an inline HTML element that is used to apply styles to a specific section of text -->
+                                                    <!-- or to group inline elements for styling purposes. -->
+                                                    <!-- By using the  element, you can apply CSS styles, such as color, font size, font weight, or background color, -->
+                                                    <!-- to specific parts of the text without affecting the overall structure of the document. -->
+                                                    <!-- It provides a way to target and style individual words or phrases within a paragraph or heading, --> 
+                                                    <!-- allowing for more granular control over the appearance of text on a webpage.-->
+
+        <nav>                                                      
+            <ul>        <!-- <ul> is the opening tag for an unordered list in HTML. The <ul> tag is used to create a list where the order of the items does not matter. -->
+                        <!-- Each item in the list is typically wrapped in <li> tags to represent a list item. -->
+
+                <li>    <!-- <li> is the opening tag for a list item in HTML. -->
+                        <!-- The <li> tag is used to define an item in a list, whether it's an ordered list (<ol>) or an unordered list (<ul>). --> 
+                        <!-- Each <li> tag represents a single item within the list.-->
+
+                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                        <!-- <a href="#search-engine-optimization"> is an anchor tag in HTML. -->
+                        <!-- The <a> tag is used to create hyperlinks to other web pages, files, locations within the same page, or specific elements on a page. -->
+                        <!-- In this specific case, <a href="#search-engine-optimization"> is indicating a hyperlink that links to an element on the same page -->
+                        <!-- with the id attribute set to "search-engine-optimization". -->
+                        <!-- When this link is clicked, the browser will scroll to the section of the page where the element with the id "search-engine-optimization" is located.-->
+                </li>
+
+                <li>
+                    <a href="#online-reputation-management">Online Reputation Management</a>
+                </li>
+
+                <li>
+                    <a href="#social-media-marketing">Social Media Marketing</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section class="hero"></section>
+    
+    <section class="content">   <!-- class="content" assigns the class name "content" to the <div> element. This allows you to apply CSS styles or JavaScript functionality -->
+                                <!-- to all elements that have the "content" class. Classes are commonly used to style and target specific elements on a webpage.-->
+        
+   <!-- <div class="search-engine-optimization"> ************************************************************************************************************************** -->
+        <figure id="search-engine-optimization" class="search-engine-optimization">
+
+            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="SEO: Search Engine Optimization"/>
+                            <!-- <img> tag in HTML is used to embed an image on a webpage.-->
+                            <!-- In the example <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />, the tag is specifying an image element with the following attributes:-->
+                            <!-- src="./assets/images/search-engine-optimization.jpg": This attribute specifies the path to the image file "search-engine-optimization.jpg" -->
+                            <!-- located in the "assets/images" directory relative to the current HTML file. -->
+                            <!-- class="float-left": This attribute assigns the class name "float-left" to the image. -->
+                            <!-- The "float-left" class is likely used to apply CSS styles that float the image to the left within its container.-->
+            
+            <!-- <h1> Search Engine Optimization</h1> -->
+            <h2> Search Engine Optimization</h2>
+            
+            <p>
+                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+            </p>
+
+        </figure>
+        
+        <figure id="online-reputation-management" class="online-reputation-management">
+            <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="Online Reputation Management" />
+            <h2>Online Reputation Management</h2>
+            <p>
+                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+            </p>
+        </figure>
+        
+        <figure id="social-media-marketing" class="social-media-marketing">
+            <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="Social Media Marketing"/>
+            <h2>Social Media Marketing</h2>
+            <p>
+                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+            </p>
+        </figure>
+
+    </section>
+
+    <aside class="benefits">
+    
+        <figure class="benefit-lead">
+            <h3>Lead Generation</h3>
+            <!-- <img src="./assets/images/lead-generation.png"/>-->
+            <img src="./assets/images/lead-generation.png" alt="Image of Lead Generation"/>
+            <p>
+                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+            </p>
+        </figure>
+    
+        <figure class="benefit-brand">
+            <h3>Brand Awareness</h3>
+            <!-- <img src="./assets/images/brand-awareness.png"/>-->
+            <img src="./assets/images/brand-awareness.png" alt="Image of Brand Awareness"/>
+            <p>
+                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+            </p>
+        </figure>
+    
+        <figure class="benefit-cost">
+            <h3>Cost Management</h3>
+            <!-- <img src="./assets/images/cost-management.png"></img> -->
+            <img src="./assets/images/cost-management.png" alt="Image of Cost Management"/>
+            <p>
+                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+            </p>
+        </figure>
+
+    </aside>
+
+    <footer class="footer">
+        <h2>Made with ❤️️ by Horiseon</h2>
+        <p>
+            &copy; 2023 Horiseon Social Solution Services, Inc. <!-- &copy is a special character entity that represents the copyright symbol ©. -->
+                                                                <!-- When you use '&copy' in your HTML code, it will display the copyright symbol on the webpage. -->
+                                                                <!-- It is often used to indicate that a particular piece of content is copyrighted.-->
+        </p>
+    </footer>
+
+</body>
+
+</html>

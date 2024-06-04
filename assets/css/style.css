@@ -1,0 +1,248 @@
+/* Comments below are commented by Taewoo Kim (TK), which obtained from the Xpert Learning Assistant. */
+
+/* CSS stands for Cascading Style Sheets. */
+/* It is a style sheet language used to describe the presentation of a document written in HTML or XML (including XML dialects like SVG or XHTML). */
+/* CSS describes how elements should be displayed on the screen, in print, or in other media. */
+/* It allows web developers to control the layout, colors, fonts, and other visual aspects of a webpage.*/
+
+* {
+    box-sizing: border-box; /* box-sizing property is used to control how the total width and height of an element is calculated. */
+                            /* By default, when you set the width and height of an element, those values apply to the content area inside the padding */
+                            /* and border of the element.*/
+                            /* The box-sizing property allows you to change this behavior in the following ways: */  
+                            /* content-box (default): The width and height you set apply to the content area only, excluding padding and border. */
+                            /* border-box: The width and height you set include the content, padding, and border of the element.*/
+                            /* By setting box-sizing: border-box;, you ensure that when you set the width and height of an element, */
+                            /* it includes the padding and border, making it easier to create consistent layouts without having to adjust */
+                            /* for padding and border widths separately.    */
+
+    padding: 0;             /* padding is a property that allows you to create space around the content inside an element. */ 
+                            /* It defines the space between the content of an element and its border. */
+                            /* The padding property can be set using different units such as pixels, ems, percentages, etc. */
+                            /* You can set padding for individual sides of an element (e.g., padding-top, padding-right, padding-bottom, padding-left) */
+                            /* or use the shorthand padding property to set padding for all sides at once. */
+
+    margin: 0;              /* margin is a property that controls the space between elements. It defines the space outside the border of an element. */
+}
+
+body {      /* body is a selector that targets the <body> element in an HTML document. */
+            /* The <body> element represents the content of an HTML document that is visible to the user. */
+            /* Styling the body element allows you to apply CSS rules to the entire body of the webpage, */
+            /* affecting the overall layout, background, text color, font styles, and more.*/
+            /* You can set properties like background-color, color, font-family, margin, padding, and other styling attributes to the body element */
+            /* to define the appearance of the entire webpage. */
+
+    background-color: #d9dcd6;  /* background-color property is used to set the background color of an element. You can specify a color value */
+                                  /* using color names, hexadecimal codes, RGB values, HSL values, or other color representations.  */
+}
+
+.header {   /* .header is a class selector that targets HTML elements with the class name "header". When you define a CSS rule for the .header class, */
+            /* it will apply the specified styles to all elements that have the class "header" in your HTML document.  */
+
+    padding: 20px;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* font-family property is used to specify the font family or typeface that should be applied to text within an element. */
+            /* You can define a list of font families in order of preference, allowing the browser to use the first available font in the list.    */
+
+    background-color: #2a607c;
+
+    color: #ffffff;   /* color property is used to set the text color of an element. */
+                        /* You can specify a color value using color names, hexadecimal codes, RGB values, HSL values, or other color representations.   */
+}
+
+.header h1 {    /* .header h1 is a descendant selector that targets <h1> elements that are nested inside an element with the class "header". */
+                /* This selector will apply styles specifically to <h1> elements that are children of an element with the class "header". */
+
+    display: inline-block;      /* display property is used to control how an element is displayed on the webpage. */
+                                /* It specifies the type of box model used for an HTML element, affecting its layout and visibility.   */
+                                /* The display property can take various values, each affecting the element's behavior differently. */
+                                /* Some common display property values include: */
+                                /* block: The element generates a block-level box, causing it to start on a new line and take up the full width available. */
+                                /* inline: The element generates an inline-level box, allowing other elements to sit beside it on the same line. */
+                                /* inline-block: The element generates an inline-level block container, combining the features of both inline and block elements.*/
+                                /* none: The element is removed from the normal document flow and is not rendered on the page. */
+
+    font-size: 48px;    
+}
+
+.header h1 .seo {               /* '.header h1 .seo' selector is targeting an element with the class "seo" that is a descendant of an <h1> element */
+                                /* that is itself a descendant of an element with the class "header".  */
+                                
+    color: #d9dcd6;         
+}
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
